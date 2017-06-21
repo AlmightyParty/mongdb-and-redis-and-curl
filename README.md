@@ -1,3 +1,14 @@
+# 操作步骤
+>1 启动mongodb 因为mongo 不起作用，  
+```
+cd /usr/local/mongodb/bin   ./mongod     
+```
+  
+>2 redis 的启动 redis-server   redis-cli  keys*   get key   
+>3 node 服务启动  
+>4 通过curl 进行访问 下面
+
+
 # 环境
 1、开发使用node版本：v8.0.0
 
