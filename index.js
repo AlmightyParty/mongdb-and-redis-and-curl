@@ -13,6 +13,6 @@ server.use(restify.bodyParser());
 require('./api')(server);
 
 //监听启动
-server.listen(9000, () => {
+server.listen(9999, () => {
 	console.log('%s listening as %s', server.name, server.url);
 });

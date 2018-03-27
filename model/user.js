@@ -7,5 +7,5 @@ let userSchema = new Schema({
 	'name': String,
 	'pwd': String
 });
-
-module.exports = mongoose.model('User', userSchema, 'user');
+//模型
+module.exports = mongoose.model('User', userSchema, 'user');// 

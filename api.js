@@ -38,9 +38,10 @@ module.exports = (router) => {
 			//保存成功，生成token
 			let token = jwt.sign({ 'userId': userId, 'expireIn': expireIn }, config.secret);
       // key 是userID  
+      // 这个没有放在session里面只是 可以将sessino
 			redis.set(userId, token, (e, ret) => {
 				if(e) throw e;
-				redis.expire(userId, expireIn); //设置过期时间
+				redis.expire(userId, expireIn); //设置过期时间  只要设置了过期时间 token 会自带过期时间 decode时候
 				res.json({
 					code: 200, 
 					data: {

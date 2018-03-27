@@ -4,14 +4,14 @@
 module.exports = {
 	//mongo连接信息
 	mongoConfig: {
-		"host": "127.0.0.1",
+		"host": "47.94.95.52",
 		"port": 27017,
         "database": "rest_test"
 	},
 	//redis连接信息
 	redisConfig: {
-		"host": "127.0.0.1",
-        "port": 6379
+		"host": "47.94.95.52",
+     "port": 6379
 	},
 	//jwt secret key
 	secret: 'node_rest_jwt_redis'
